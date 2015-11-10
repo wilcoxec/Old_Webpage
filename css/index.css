@@ -1,0 +1,580 @@
+
+@font-face {
+	font-family: NeutraDemi;
+	src: url("../fonts/NeutraTextTFLightDemi.ttf");
+	font-weight: lighter;
+}
+
+@font-face {
+  font-family: KaufmannBold;
+  src: url("../fonts/Kaufmann-Bold.otf");
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin:0;
+  padding: 0;
+}
+
+#svgTitle {
+  height: 100%;
+  background-image:  url(../images/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+#wrap {
+   margin: 10px auto;        
+   background: #666;
+   padding: 10px;
+}
+
+
+#nav {
+  list-style:none;
+  margin:20;
+  padding:0;
+  text-align:center; 
+  border-bottom: 1px solid #d3d3d3; 
+  width: 100%;
+  position: absolute;
+}
+#nav ul {
+  margin: 0;
+  padding: 0;   
+  background-color: #fff; 
+}
+
+#nav li {
+  display:inline;
+  background-color: #fff;
+  color: #000;
+  list-style-type: none;
+/*  margin: auto;*/
+}
+
+#nav li a {
+  display:inline-block;
+  text-decoration: none;
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-family: NeutraDemi;
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+#nav li a:hover {
+   text-decoration: none;
+   color: #FE777D;
+
+}
+
+.titleHeader {
+  margin-top: 0px;
+  background-color: #81ADA0;
+  min-height: 100%;
+  text-align: center;
+
+}
+
+object {
+  height : 100%;
+}
+
+
+.titleProject {
+/*  margin-top: 200px;*/
+  font-family: NeutraDemi;
+  text-transform: uppercase;
+  line-height: 27px;
+/*  font-weight: lighter;*/
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 4px;
+
+  text-align: center;
+/*  background-color: #fff;*/
+  height: 100px;
+  width: 100%;
+  padding-top: 100px;
+  color: #FE777D;
+
+}
+
+
+
+.projectsDisplay {
+  background-color: #fff;
+  height: 100%;
+  margin-top: 50px;
+  
+  text-align: center;
+  text-transform: uppercase;
+  
+  font-size: 12px;
+  font-family: NeutraDemi;
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: 4px;
+  
+  color: black;
+  width: 100%;
+
+  text-decoration: none;
+}
+
+
+#projectLink {
+    padding-top: 20px;  
+    font-family: NeutraDemi;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.25px;
+    text-transform:uppercase;
+    line-height: 18px;  
+    background-color: #fff;
+
+    text-decoration: none;
+}
+
+#imageScreen {
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    background-image: url(../images/screenBlank.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#imageScreen:hover {
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    background-image: url(../images/MonicaScreen.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#infoLink {
+    padding-top: 20px;  
+    font-family: NeutraDemi;
+    font-weight: 400;
+    font-style: italic;
+    font-size:12px;
+    letter-spacing: 1.25px;
+    text-transform:lowercase;
+    line-height: 18px;  
+    background-color: #fff;
+}
+
+
+#webLink {
+    font-family: NeutraDemi;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    letter-spacing: 1.25px;
+    text-transform:lowercase;
+    line-height: 18px;
+    background-color: #fff;
+    text-decoration: none;
+}
+#webLink a {
+    color: #000;
+    text-decoration: none;
+}
+#webLink a:hover {
+    color: #ae9b81;
+}
+
+
+
+
+#aboutDescription {
+    font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#onDesign {
+
+    font-family: NeutraDemi;
+    text-transform:uppercase;
+    text-align: center;
+    font-weight: 100;
+    font-size: 70px;
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 90px;
+    margin-top: 0;
+}
+
+.quote {
+  padding: 5px;
+  border-top: 10px solid #000000; 
+  border-bottom: 10px solid #000000; 
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.bigger {
+  font-size: 120px;
+  color: #FE777D; 
+}
+
+
+#milton {
+    font-family: KaufmannBold;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 1.25px;
+    text-align: center; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;    
+}
+
+
+
+
+#contactInfo {
+    padding-top: 5px;  
+    font-family: NeutraDemi;
+    font-weight: 400;
+    font-size:12px;
+    letter-spacing: 1.25px;
+    text-transform:lowercase;
+    line-height: 18px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.contactBlock {
+  padding: 250px;
+  background-color: #fff;
+  text-align: center;
+
+}
+
+#contactInfo a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+h3 {
+	font-family: NeutraDemi;
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 4px;
+	margin-bottom: 50px;
+  margin-top: 0;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+#backgroundQuote {
+  height: 100%;
+  background-image: url(../images/quote.png);
+  background-size: 60%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+
+}
+
+
+
+
+#resumeBlock {
+  margin-top: 0;
+  padding-top: 0;
+	background-color: #81ADA0;
+  width: 100%;
+}
+
+
+#fadeInE {
+    opacity:0;
+}
+
+#fadeInE1 {
+    opacity:0;
+}
+
+#fadeInE2 {
+    opacity:0;
+}
+
+#fadeInE3 {
+    opacity:0;
+}
+
+#fadeInEdu {
+    opacity:0;
+}
+
+#fadeInEdu1 {
+    opacity:0;
+}
+
+#fadeInEdu2 {
+    opacity:0;
+}
+
+#fadeInContact {
+    opacity:0;
+}
+
+#fadeInAbout{
+    opacity:0;
+}
+
+
+
+#description {
+    padding-top: 5px;  
+    font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size:14px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#languages { 
+	display: inline-block;
+	word-spacing: 25px;
+	color: #FF777D;
+	font-family: NeutraDemi;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:12px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 50px;
+  
+}
+
+#workTitle {
+	font-family: NeutraDemi;
+    font-weight: normal;
+
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1.25px;
+    line-height: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 5px;
+}
+
+#icon img{
+  padding-left: 10px;
+}
+
+#workPlace{
+    font-family: NeutraDemi;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1.25px;
+    line-height: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0;
+}
+
+#date {
+    font-family: KaufmannBold;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1.25px;
+    text-transform:lowercase;
+    line-height: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#location {
+    font-family: KaufmannBold;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1.25px;
+    text-transform:lowercase;
+    line-height: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0;
+}
+
+#schoolTitle {
+	font-family: NeutraDemi;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1.25px;
+    line-height: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 0;
+}
+
+#schoolName{
+	 font-family: NeutraDemi;
+    font-weight: normal;
+
+    text-transform:uppercase;
+    font-size: 18px;
+    letter-spacing: 1.25px;
+    line-height: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#schoolDate {
+    font-family: KaufmannBold;
+    font-weight: 400;
+    font-size:18px;
+    letter-spacing: 1.25px;
+    text-transform:lowercase;
+    line-height: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
+
+#schoolLocation {
+    font-family: KaufmannBold;
+    font-weight: 400;
+    font-size:18px;
+    letter-spacing: 1.25px;
+    text-transform:lowercase;
+    line-height: 18px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0;
+    background-color: #81ADA0;
+}
+
+.copyRight {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: NeutraDemi;
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+
+
+#svgProjectHeader{
+  margin-top: 100px;
+  padding: 50px;
+}
+
+#svgAboutHeader{
+  margin-top: 100px;
+  padding: 50px;
+}
+
+#svgResumeHeader{
+  padding: 50px;
+  background-color: #81ADA0; 
+}
+
+/*SVG ANIMATIONS*/
+.st0 {
+  fill:none;
+  stroke-width: 0.25px;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  stroke:#000;
+}
+
+.fill {
+    fill:none;
+}
+
+.a {
+  fill:none;
+  stroke-width: 0.25px;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  stroke:#000;
+}
+
+.aFill {
+    fill:none;
+}
+
+.r {
+  fill:none;
+  stroke-width: 0.25px;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  stroke:#000;
+}
+
+.rFill {
+    fill:none;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes filling {
+  from { fill: none; }
+  to { fill: #000;}
+}
+
+@keyframes filling {
+  from { fill:none; }
+  to { fill: #000; }
+}
+
+
+
+
+
+
+
+
+ 
