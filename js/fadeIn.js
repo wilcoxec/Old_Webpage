@@ -9,6 +9,8 @@ $(document).ready(function() {
        
   }
 
+
+
   if ($(window).scrollTop() > $("#fadeInE1").offset().top - 400 ) {
       $("#fadeInE1").animate({"opacity" : "1"}, 1000);
        
@@ -51,6 +53,11 @@ $(document).ready(function() {
 
   if ($(window).scrollTop() > $("#fadeInAbout").offset().top - 400) {
       $("#fadeInAbout").animate({"opacity" : "1"}, 1000);
+       
+  }
+
+  if ($(window).scrollTop() > $("#fadeInProjects").offset().top - 400 ) {
+      $("#fadeInProjects").animate({"opacity" : "1"}, 1500);
        
   }
 

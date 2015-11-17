@@ -10,6 +10,11 @@
   src: url("../fonts/Kaufmann-Bold.otf");
 }
 
+@font-face {
+  font-family: NeutraThin;
+  src: url("../fonts/NeutraDisplayThinAlt.ttf");
+}
+
 html, body {
   height: 100%;
   min-height: 100%;
@@ -17,19 +22,19 @@ html, body {
   padding: 0;
 }
 
+
+
 #svgTitle {
   height: 100%;
-  background-image:  url(../images/back.png);
+  background-image: url(../images/b.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 
-#wrap {
-   margin: 10px auto;        
-   background: #666;
-   padding: 10px;
+#nameSvg{
+  padding-top: 50px;
 }
 
 
@@ -37,11 +42,11 @@ html, body {
   list-style:none;
   margin:20;
   padding:0;
-  text-align:center; 
-  border-bottom: 1px solid #d3d3d3; 
+  text-align:center;
   width: 100%;
   position: absolute;
 }
+
 #nav ul {
   margin: 0;
   padding: 0;   
@@ -53,7 +58,6 @@ html, body {
   background-color: #fff;
   color: #000;
   list-style-type: none;
-/*  margin: auto;*/
 }
 
 #nav li a {
@@ -73,34 +77,18 @@ html, body {
 #nav li a:hover {
    text-decoration: none;
    color: #FE777D;
-
-}
-
-.titleHeader {
-  margin-top: 0px;
-  background-color: #81ADA0;
-  min-height: 100%;
-  text-align: center;
-
-}
-
-object {
-  height : 100%;
 }
 
 
 .titleProject {
-/*  margin-top: 200px;*/
   font-family: NeutraDemi;
   text-transform: uppercase;
   line-height: 27px;
-/*  font-weight: lighter;*/
   font-size: 15px;
   font-weight: lighter;
   letter-spacing: 4px;
 
   text-align: center;
-/*  background-color: #fff;*/
   height: 100px;
   width: 100%;
   padding-top: 100px;
@@ -130,51 +118,25 @@ object {
   text-decoration: none;
 }
 
+#portImg img:hover{
+  opacity: 0.5;
+  color: #ae9b81;
+}
+
 
 #projectLink {
     padding-top: 20px;  
     font-family: NeutraDemi;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
     letter-spacing: 1.25px;
     text-transform:uppercase;
-    line-height: 18px;  
+    line-height: 20px;  
     background-color: #fff;
-
     text-decoration: none;
 }
 
-#imageScreen {
-    display: inline-block;
-    height: 400px;
-    width: 400px;
-    background-image: url(../images/screenBlank.png);
-    background-size: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-#imageScreen:hover {
-    display: inline-block;
-    height: 400px;
-    width: 400px;
-    background-image: url(../images/MonicaScreen.png);
-    background-size: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#infoLink {
-    padding-top: 20px;  
-    font-family: NeutraDemi;
-    font-weight: 400;
-    font-style: italic;
-    font-size:12px;
-    letter-spacing: 1.25px;
-    text-transform:lowercase;
-    line-height: 18px;  
-    background-color: #fff;
-}
 
 
 #webLink {
@@ -196,23 +158,28 @@ object {
     color: #ae9b81;
 }
 
-
+.aboutDisplay{
+  /*background-color: #BDC19F;*/
+  padding-bottom: 100px;
+}
 
 
 #aboutDescription {
     font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
     font-weight: lighter;
+    /*font-family: NeutraThin;*/
     font-size: 20px;
     letter-spacing: 1.5px;
     line-height: 40px;
     margin-left: 200px;
     margin-right: 200px;
-    margin-top: 0;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*background-color: #BDC19F;*/
 }
 
 #onDesign {
-
     font-family: NeutraDemi;
     text-transform:uppercase;
     text-align: center;
@@ -304,13 +271,18 @@ h3 {
 }
 
 
-
-
 #resumeBlock {
   margin-top: 0;
   padding-top: 0;
 	background-color: #81ADA0;
   width: 100%;
+}
+
+#iconSvg{
+  padding-top: 8px;
+  padding-left: 6px;
+  pointer-events: none;
+  max-width: 5.0%;
 }
 
 
@@ -350,6 +322,10 @@ h3 {
     opacity:0;
 }
 
+#fadeInProjects{
+    opacity: 0;
+}
+
 
 
 #description {
@@ -368,7 +344,7 @@ h3 {
 #languages { 
 	display: inline-block;
 	word-spacing: 25px;
-	color: #FF777D;
+	color: #F7929A;
 	font-family: NeutraDemi;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -484,6 +460,10 @@ h3 {
     background-color: #81ADA0;
 }
 
+#contactButtons{
+  padding: 15px;
+}
+
 .copyRight {
   text-align: center;
   text-decoration: none;
@@ -498,12 +478,12 @@ h3 {
 
 #svgProjectHeader{
   margin-top: 100px;
-  padding: 50px;
 }
 
 #svgAboutHeader{
   margin-top: 100px;
   padding: 50px;
+  /*background-color: #BDC19F;*/
 }
 
 #svgResumeHeader{

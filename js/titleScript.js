@@ -92,6 +92,8 @@ $(document).ready(function() {
 
   }
 
+  
+
   if ($(window).scrollTop() > $("#resumeFrame").offset().top + 40 ) {
      $("#showDiv").css({"display" : "block"}); 
   }
